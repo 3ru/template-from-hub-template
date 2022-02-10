@@ -1,0 +1,134 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+	{
+		"key": "cmd+`", //"ctrl+shift+space",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+space",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+f12",
+		"command": "editor.action.goToDeclaration",
+		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+	},
+	{
+		"key": "f12",
+		"command": "-editor.action.goToDeclaration",
+		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+	},
+	{
+		"key": "ctrl+shift+f12",
+		"command": "editor.action.referenceSearch.trigger",
+		"when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+	},
+	{
+		"key": "shift+f12",
+		"command": "-editor.action.referenceSearch.trigger",
+		"when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.terminal.focus",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+x",
+		"command": "workbench.action.terminal.kill"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "workbench.action.terminal.focusNext"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "workbench.action.terminal.focusPrevious"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-deleteRight",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "editor.emmet.action.balanceOut"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "editor.emmet.action.balanceIn"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "-editor.action.transposeLetters",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "editor.emmet.action.matchTag"
+	},
+	{
+		"key": "ctrl+/",
+		"command": "editor.emmet.action.toggleComment"
+	},
+	{
+		"key": "ctrl+shift+t",
+		"command": "editor.emmet.action.updateTag"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "-deleteAllRight",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "editor.emmet.action.removeTag"
+	},
+	{
+		"key": "ctrl+alt+end",
+		"command": "editor.emmet.action.nextEditPoint"
+	},
+	{
+		"key": "ctrl+alt+home",
+		"command": "editor.emmet.action.prevEditPoint"
+	},
+	{
+		"key": "ctrl+shift+.",
+		"command": "editor.emmet.action.selectNextItem"
+	},
+	{
+		"key": "ctrl+shift+,",
+		"command": "editor.emmet.action.selectPrevItem"
+	},
+	{
+		"key": "ctrl+alt+j",
+		"command": "editor.emmet.action.splitJoinTag"
+	},
+	{
+		"key": "ctrl+shift+alt+j",
+		"command": "editor.emmet.action.mergeLines"
+	},
+	{
+		"key": "ctrl+shift+u",
+		"command": "editor.emmet.action.updateImageSize"
+	},
+	{
+		"key": "ctrl+shift+y",
+		"command": "editor.emmet.action.evaluateMathExpression"
+	},
+	{
+		"key": "ctrl+End",
+		"command": "editor.emmet.action.incrementNumberByOne"
+	},
+	{
+		"key": "ctrl+shift+a",
+		"command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation"
+	}
+]

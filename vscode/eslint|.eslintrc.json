@@ -1,0 +1,28 @@
+{
+	"root": true,
+	"extends": "airbnb/base",
+	"rules": {
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"no-tabs": "off",
+		"no-alert": "off",
+		"no-console": "off",
+		"no-plusplus": "off",
+		"no-extra-semi": "off",
+		"keyword-spacing": "error",
+		"no-underscore-dangle": "off"
+	},
+	"env": {
+		"browser": true,
+		"mocha": true,
+		"applescript": false,
+		"mongo": false,
+		"node": true,
+		"shelljs": false
+	}
+}

@@ -1,0 +1,39 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"/* [message] */": {
+		"scope": "javascript",
+		"prefix": "/* [message mocha] */",
+		"body": "'$0', ",
+	},
+	"/* [declaration mocha], [named declaration mocha] */": {
+		"scope": "javascript",
+		"prefix": "/* [declaration mocha] */",
+		"body": "${1:/* eslint-disable-line prefer-arrow-callback, func-names */} function ${2:setName}($3) {\n\t$0\n}"
+	},
+	"/* [arrow mocha] */": {
+		"scope": "javascript",
+		"prefix": "/* [arrow mocha] */",
+		"body":	"${1:()} => {\n\t$0\n}"
+	},
+	"Mocha": {
+		"scope": "javascript",
+		"prefix": "mocha",
+		"body": "${1|context,describe,before,beforeEach,after,afterEach,it|}(${2:/* [message mocha] */}${3|/* [arrow mocha] */,/* [declaration mocha] */|});\n$0",
+		"description": "Asserts that object is truthy."
+	}
+}

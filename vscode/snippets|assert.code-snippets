@@ -1,0 +1,1127 @@
+{
+	"assert(expression, message)": {
+		"scope": "javascript",
+		"prefix": "assert(expression, message)",
+		"body": [
+			"assert(${1:expression}, ${2:message});",
+			"$0"
+		],
+		"description": "Write your own test expressions."
+	},
+	"assert.fail([message])": {
+		"scope": "javascript",
+		"prefix": "assert.fail([message])",
+		"body": [
+			"assert.fail(${1:[message]});",
+			"$0"
+		],
+		"description": "Throw a failure. Node.js assert module-compatible."
+	},
+	"assert.fail(actual, expected, [message], [operator])": {
+		"scope": "javascript",
+		"prefix": "assert.fail(actual, expected, [message], [operator])",
+		"body": [
+			"assert.fail(${1:actual}, ${2:expected}, ${3:[message]}, ${4:[operator]});",
+			"$0"
+		],
+		"description": "Throw a failure. Node.js assert module-compatible.assert.fail(); assert.fail(\"custom error message\");\nassert.fail(1, 2);\nassert.fail(1, 2, \"custom error message\");\nassert.fail(1, 2, \"custom error message\", \">\");\nassert.fail(1, 2, undefined, \">\");\n"
+	},
+	"assert.isOk(object, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isOk(object, [message])",
+		"body": [
+			"assert.isOk(${1:object}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object is truthy."
+	},
+	"assert.isNotOk(object, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotOk(object, [message])",
+		"body": [
+			"assert.isNotOk(${1:object}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object is falsy."
+	},
+	"assert.equal(actual, expected, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.equal(actual, expected, [message])",
+		"body": [
+			"assert.equal(${1:actual}, ${2:expected}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts non-strict equality (==) of actual and expected."
+	},
+	"assert.notEqual(actual, expected, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notEqual(actual, expected, [message])",
+		"body": [
+			"assert.notEqual(${1:actual}, ${2:expected}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts non-strict inequality (!=) of actual and expected."
+	},
+	"assert.strictEqual(actual, expected, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.strictEqual(actual, expected, [message])",
+		"body": [
+			"assert.strictEqual(${1:actual}, ${2:expected}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts strict equality (===) of actual and expected."
+	},
+	"assert.notStrictEqual(actual, expected, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notStrictEqual(actual, expected, [message])",
+		"body": [
+			"assert.notStrictEqual(${1:actual}, ${2:expected}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts strict inequality (!==) of actual and expected."
+	},
+	"assert.deepEqual(actual, expected, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.deepEqual(actual, expected, [message])",
+		"body": [
+			"assert.deepEqual(${1:actual}, ${2:expected}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that actual is deeply equal to expected."
+	},
+	"assert.notDeepEqual(actual, expected, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notDeepEqual(actual, expected, [message])",
+		"body": [
+			"assert.notDeepEqual(${1:actual}, ${2:expected}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Assert that actual is not deeply equal to expected."
+	},
+	"assert.isAbove(valueToCheck, valueToBeAbove, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isAbove(valueToCheck, valueToBeAbove, [message])",
+		"body": [
+			"assert.isAbove(${1:valueToCheck}, ${2:valueToBeAbove}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts valueToCheck is strictly greater than (>) valueToBeAbove."
+	},
+	"assert.isAtLeast(valueToCheck, valueToBeAtLeast, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isAtLeast(valueToCheck, valueToBeAtLeast, [message])",
+		"body": [
+			"assert.isAtLeast(${1:valueToCheck}, ${2:valueToBeLeast}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts valueToCheck is greater than or equal to (>=) valueToBeAtLeast."
+	},
+	"assert.isBelow(valueToCheck, valueToBeBelow, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isBelow(valueToCheck, valueToBeBelow, [message])",
+		"body": [
+			"assert.isBelow(${1:valueToCheck}, ${2:valueToBeBelow}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts valueToCheck is strictly less than (<) valueToBeBelow."
+	},
+	"assert.isAtMost(valueToCheck, valueToBeAtMost, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isAtMost(valueToCheck, valueToBeAtMost, [message])",
+		"body": [
+			"assert.isAtMost(${1:valueToCheck}, ${2:valueToBeAtMost}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts valueToCheck is less than or equal to (<=) valueToBeAtMost."
+	},
+	"assert.isTrue(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isTrue(value, [message])",
+		"body": [
+			"assert.isTrue(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is true."
+	},
+	"assert.isNotTrue(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotTrue(value, [message])",
+		"body": [
+			"assert.isNotTrue(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not true."
+	},
+	"assert.isFalse(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isFalse(value, [message])",
+		"body": [
+			"assert.isFalse(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is false."
+	},
+	"assert.isNotFalse(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotFalse(value, [message])",
+		"body": [
+			"assert.isNotFalse(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not false."
+	},
+	"assert.isNull(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNull(value, [message])",
+		"body": [
+			"assert.isNull(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is null."
+	},
+	"assert.isNotNull(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotNull(value, [message])",
+		"body": [
+			"assert.isNotNull(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not null."
+	},
+	"assert.isNaN": {
+		"scope": "javascript",
+		"prefix": "assert.isNaN",
+		"body": [
+			"assert.isNaN(${1:NaN}, ${2:[NaN is NaN]});",
+			"$0"
+		],
+		"description": "Asserts that value is NaN."
+	},
+	"assert.isNotNaN": {
+		"scope": "javascript",
+		"prefix": "assert.isNotNaN",
+		"body": [
+			"assert.isNotNaN(${1:4}, ${2:[4 is not NaN]});",
+			"$0"
+		],
+		"description": "Asserts that value is not NaN."
+	},
+	"assert.exists": {
+		"scope": "javascript",
+		"prefix": "assert.exists",
+		"body": [
+			"assert.exists(${1:value}, ${2:[foo is neither `null` nor `undefined]});",
+			"$0"
+		],
+		"description": "Asserts that the target is neither null nor undefined."
+	},
+	"assert.notExists": {
+		"scope": "javascript",
+		"prefix": "assert.notExists",
+		"body": [
+			"assert.notExists(${1:value}, ${2:[baz is either null or undefined]});",
+			"$0"
+		],
+		"description": "Asserts that the target is either null or undefined."
+	},
+	"assert.isUndefined(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isUndefined(value, [message])",
+		"body": [
+			"assert.isUndefined(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is undefined."
+	},
+	"assert.isDefined(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isDefined(value, [message])",
+		"body": [
+			"assert.isDefined(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not undefined."
+	},
+	"assert.isFunction(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isFunction(value, [message])",
+		"body": [
+			"assert.isFunction(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is a function."
+	},
+	"assert.isNotFunction(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotFunction(value, [message])",
+		"body": [
+			"assert.isNotFunction(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not a function."
+	},
+	"assert.isObject(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isObject(value, [message])",
+		"body": [
+			"assert.isObject(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is an object of type ‘Object’ (as revealed by Object.prototype.toString). The assertion does not match subclassed objects."
+	},
+	"assert.isNotObject(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotObject(value, [message])",
+		"body": [
+			"assert.isNotObject(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not an object of type ‘Object’ (as revealed by Object.prototype.toString)."
+	},
+	"assert.isArray(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isArray(value, [message])",
+		"body": [
+			"assert.isArray(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is an array."
+	},
+	"assert.isNotArray(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotArray(value, [message])",
+		"body": [
+			"assert.isNotArray(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not an array."
+	},
+	"assert.isString(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isString(value, [message])",
+		"body": [
+			"assert.isString(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is a string."
+	},
+	"assert.isNotString(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotString(value, [message])",
+		"body": [
+			"assert.isNotString(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not a string."
+	},
+	"assert.isNumber(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNumber(value, [message])",
+		"body": [
+			"assert.isNumber(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is a number."
+	},
+	"assert.isNotNumber(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotNumber(value, [message])",
+		"body": [
+			"assert.isNotNumber(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not a number."
+	},
+	"assert.isFinite(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isFinite(value, [message])",
+		"body": [
+			"assert.isFinite(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is a finite number. Unlike .isNumber, this will fail for NaN and Infinity."
+	},
+	"assert.isBoolean(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isBoolean(value, [message])",
+		"body": [
+			"assert.isBoolean(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is a boolean."
+	},
+	"assert.isNotBoolean(value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.isNotBoolean(value, [message])",
+		"body": [
+			"assert.isNotBoolean(${1:value}, ${2:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is not a boolean."
+	},
+	"assert.typeOf(value, name, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.typeOf(value, name, [message])",
+		"body": [
+			"assert.typeOf(${1:value}, ${2:name}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value’s type is name, as determined by Object.prototype.toString."
+	},
+	"assert.notTypeOf(value, name, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notTypeOf(value, name, [message])",
+		"body": [
+			"assert.notTypeOf(${1:value}, ${2:name}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value’s type is not name, as determined by Object.prototype.toString."
+	},
+	"assert.instanceOf(object, constructor, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.instanceOf(object, constructor, [message])",
+		"body": [
+			"assert.instanceOf(${1:object}, ${2:constructor}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value is an instance of constructor."
+	},
+	"assert.notInstanceOf(object, constructor, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notInstanceOf(object, constructor, [message])",
+		"body": [
+			"assert.notInstanceOf(${1:object}, ${2:constructor}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts value is not an instance of constructor."
+	},
+	"assert.include(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.include(haystack, needle, [message])",
+		"body": [
+			"assert.include(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that haystack includes needle. Can be used to assert the inclusion of a value in an array, a substring in a string, or a subset of properties in an object."
+	},
+	"assert.notInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notInclude(haystack, needle, [message])",
+		"body": [
+			"assert.notInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that haystack does not include needle. Can be used to assert the absence of a value in an array, a substring in a string, or a subset of properties in an object."
+	},
+	"assert.deepInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.deepInclude(haystack, needle, [message])",
+		"body": [
+			"assert.deepInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that haystack includes needle. Can be used to assert the inclusion of a value in an array or a subset of properties in an object. Deep equality is used."
+	},
+	"assert.notDeepInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notDeepInclude(haystack, needle, [message])",
+		"body": [
+			"assert.notDeepInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that haystack does not include needle. Can be used to assert the absence of a value in an array or a subset of properties in an object. Deep equality is used."
+	},
+	"assert.nestedInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.nestedInclude(haystack, needle, [message])",
+		"body": [
+			"assert.nestedInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object. Enables the use of dot- and bracket-notation for referencing nested properties. ‘[]’ and ‘.’ in property names can be escaped using double backslashes."
+	},
+	"assert.notNestedInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notNestedInclude(haystack, needle, [message])",
+		"body": [
+			"assert.notNestedInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ does not include ‘needle’. Can be used to assert the absence of a subset of properties in an object. Enables the use of dot- and bracket-notation for referencing nested properties. ‘[]’ and ‘.’ in property names can be escaped using double backslashes."
+	},
+	"assert.deepNestedInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.deepNestedInclude(haystack, needle, [message])",
+		"body": [
+			"assert.deepNestedInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while checking for deep equality. Enables the use of dot- and bracket-notation for referencing nested properties. ‘[]’ and ‘.’ in property names can be escaped using double backslashes."
+	},
+	"assert.notDeepNestedInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notDeepNestedInclude(haystack, needle, [message])",
+		"body": [
+			"assert.notDeepNestedInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ does not include ‘needle’. Can be used to assert the absence of a subset of properties in an object while checking for deep equality. Enables the use of dot- and bracket-notation for referencing nested properties. ‘[]’ and ‘.’ in property names can be escaped using double backslashes."
+	},
+	"assert.ownInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.ownInclude(haystack, needle, [message])",
+		"body": [
+			"assert.ownInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while ignoring inherited properties."
+	},
+	"assert.notOwnInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notOwnInclude(haystack, needle, [message])",
+		"body": [
+			"assert.notOwnInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the absence of a subset of properties in an object while ignoring inherited properties."
+	},
+	"assert.deepOwnInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.deepOwnInclude(haystack, needle, [message])",
+		"body": [
+			"assert.deepOwnInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while ignoring inherited properties and checking for deep equality."
+	},
+	"assert.notDeepOwnInclude(haystack, needle, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notDeepOwnInclude(haystack, needle, [message])",
+		"body": [
+			"assert.notDeepOwnInclude(${1:haystack}, ${2:needle}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the absence of a subset of properties in an object while ignoring inherited properties and checking for deep equality."
+	},
+	"assert.match(value, regexp, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.match(value, regexp, [message])",
+		"body": [
+			"assert.match(${1:value}, ${2:regexp}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value matches the regular expression regexp."
+	},
+	"assert.notMatch(value, regexp, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notMatch(value, regexp, [message])",
+		"body": [
+			"assert.notMatch(${1:value}, ${2:regexp}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that value does not match the regular expression regexp."
+	},
+	"assert.property(object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.property(object, property, [message])",
+		"body": [
+			"assert.property(${1:object}, ${2:property}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has a direct or inherited property named by property."
+	},
+	"assert.notProperty(object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notProperty(object, property, [message])",
+		"body": [
+			"assert.notProperty(${1:object}, ${2:property}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have a direct or inherited property named by property."
+	},
+	"assert.propertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.propertyVal(object, property, value, [message])",
+		"body": [
+			"assert.propertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has a direct or inherited property named by property with a value given by value. Uses a strict equality check (===)."
+	},
+	"assert.notPropertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notPropertyVal(object, property, value, [message])",
+		"body": [
+			"assert.notPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have a direct or inherited property named by property with value given by value. Uses a strict equality check (===)."
+	},
+	"assert.deepPropertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.deepPropertyVal(object, property, value, [message])",
+		"body": [
+			"assert.deepPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has a direct or inherited property named by property with a value given by value. Uses a deep equality check."
+	},
+	"assert.notDeepPropertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notDeepPropertyVal(object, property, value, [message])",
+		"body": [
+			"assert.notDeepPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have a direct or inherited property named by property with value given by value. Uses a deep equality check."
+	},
+	"assert.nestedProperty(object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.nestedProperty(object, property, [message])",
+		"body": [
+			"assert.nestedProperty(${1:object}, ${2:property}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has a direct or inherited property named by property, which can be a string using dot- and bracket-notation for nested reference."
+	},
+	"assert.notNestedProperty(object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notNestedProperty(object, property, [message])",
+		"body": [
+			"assert.notNestedProperty(${1:object}, ${2:property}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have a property named by property, which can be a string using dot- and bracket-notation for nested reference. The property cannot exist on the object nor anywhere in its prototype chain."
+	},
+	"assert.nestedPropertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.nestedPropertyVal(object, property, value, [message])",
+		"body": [
+			"assert.nestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has a property named by property with value given by value. property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===)."
+	},
+	"assert.notNestedPropertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notNestedPropertyVal(object, property, value, [message])",
+		"body": [
+			"assert.notNestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have a property named by property with value given by value. property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===)."
+	},
+	"assert.deepNestedPropertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.deepNestedPropertyVal(object, property, value, [message])",
+		"body": [
+			"assert.deepNestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has a property named by property with a value given by value. property can use dot- and bracket-notation for nested reference. Uses a deep equality check."
+	},
+	"assert.notDeepNestedPropertyVal(object, property, value, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notDeepNestedPropertyVal(object, property, value, [message])",
+		"body": [
+			"assert.notDeepNestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have a property named by property with value given by value. property can use dot- and bracket-notation for nested reference. Uses a deep equality check."
+	},
+	"assert.lengthOf(object, length, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.lengthOf(object, length, [message])",
+		"body": [
+			"assert.lengthOf(${1:object}, ${2:length}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has a length or size with the expected value."
+	},
+	"assert.hasAnyKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.hasAnyKeys(object, [keys], [message])",
+		"body": [
+			"assert.hasAnyKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has at least one of the keys provided. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.hasAllKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.hasAllKeys(object, [keys], [message])",
+		"body": [
+			"assert.hasAllKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has all and only all of the keys provided. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.containsAllKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.containsAllKeys(object, [keys], [message])",
+		"body": [
+			"assert.containsAllKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has all of the keys provided but may have more keys not listed. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.doesNotHaveAnyKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotHaveAnyKeys(object, [keys], [message])",
+		"body": [
+			"assert.doesNotHaveAnyKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has none of the keys provided. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.doesNotHaveAllKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotHaveAllKeys(object, [keys], [message])",
+		"body": [
+			"assert.doesNotHaveAllKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have at least one of the keys provided. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.hasAnyDeepKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.hasAnyDeepKeys(object, [keys], [message])",
+		"body": [
+			"assert.hasAnyDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has at least one of the keys provided. Since Sets and Maps can have objects as keys you can use this assertion to perform a deep comparison. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.hasAllDeepKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.hasAllDeepKeys(object, [keys], [message])",
+		"body": [
+			"assert.hasAllDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has all and only all of the keys provided. Since Sets and Maps can have objects as keys you can use this assertion to perform a deep comparison. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.containsAllDeepKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.containsAllDeepKeys(object, [keys], [message])",
+		"body": [
+			"assert.containsAllDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object contains all of the keys provided. Since Sets and Maps can have objects as keys you can use this assertion to perform a deep comparison. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.doesNotHaveAnyDeepKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotHaveAnyDeepKeys(object, [keys], [message])",
+		"body": [
+			"assert.doesNotHaveAnyDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object has none of the keys provided. Since Sets and Maps can have objects as keys you can use this assertion to perform a deep comparison. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.doesNotHaveAllDeepKeys(object, [keys], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotHaveAllDeepKeys(object, [keys], [message])",
+		"body": [
+			"assert.doesNotHaveAllDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that object does not have at least one of the keys provided. Since Sets and Maps can have objects as keys you can use this assertion to perform a deep comparison. You can also provide a single object instead of a keys array and its keys will be used as the expected set of keys."
+	},
+	"assert.throws(fn, [errorLike/string/regexp], [string/regexp], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.throws(fn, [errorLike/string/regexp], [string/regexp], [message])",
+		"body": [
+			"assert.throws(${1:fn}, ${2:[errorLike/string/regexp]}, ${3:[string/regexp]}, ${4:[message]});",
+			"$0"
+		],
+		"description": "If errorLike is an Error constructor, asserts that fn will throw an error that is an instance of errorLike. If errorLike is an Error instance, asserts that the error thrown is the same instance as errorLike. If errMsgMatcher is provided, it also asserts that the error thrown will have a message matching errMsgMatcher."
+	},
+	"assert.doesNotThrow(fn, [errorLike/string/regexp], [string/regexp], [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotThrow(fn, [errorLike/string/regexp], [string/regexp], [message])",
+		"body": [
+			"assert.doesNotThrow(${1:fn}, ${2:[errorLike/string/regexp]}, ${3:[string/regexp]}, ${4:[message]});",
+			"$0"
+		],
+		"description": "If errorLike is an Error constructor, asserts that fn will not throw an error that is an instance of errorLike. If errorLike is an Error instance, asserts that the error thrown is not the same instance as errorLike. If errMsgMatcher is provided, it also asserts that the error thrown will not have a message matching errMsgMatcher."
+	},
+	"assert.operator(val1, operator, val2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.operator(val1, operator, val2, [message])",
+		"body": [
+			"assert.operator(${1:val1}, ${2:operator}, ${3:val2}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Compares two values using operator."
+	},
+	"assert.closeTo(actual, expected, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.closeTo(actual, expected, delta, [message])",
+		"body": [
+			"assert.closeTo(${1:actual}, ${2:expected}, ${3:delta}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that the target is equal expected, to within a +/- delta range."
+	},
+	"assert.approximately(actual, expected, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.approximately(actual, expected, delta, [message])",
+		"body": [
+			"assert.approximately(${1:actual}, ${2:expected}, ${3:delta}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that the target is equal expected, to within a +/- delta range."
+	},
+	"assert.sameMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.sameMembers(set1, set2, [message])",
+		"body": [
+			"assert.sameMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 have the same members in any order. Uses a strict equality check (===)."
+	},
+	"assert.notSameMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notSameMembers(set1, set2, [message])",
+		"body": [
+			"assert.notSameMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 don’t have the same members in any order. Uses a strict equality check (===)."
+	},
+	"assert.sameDeepMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.sameDeepMembers(set1, set2, [message])",
+		"body": [
+			"assert.sameDeepMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 have the same members in any order. Uses a deep equality check."
+	},
+	"assert.notSameDeepMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notSameDeepMembers(set1, set2, [message])",
+		"body": [
+			"assert.notSameDeepMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 don’t have the same members in any order. Uses a deep equality check."
+	},
+	"assert.sameOrderedMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.sameOrderedMembers(set1, set2, [message])",
+		"body": [
+			"assert.sameOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 have the same members in the same order. Uses a strict equality check (===)."
+	},
+	"assert.notSameOrderedMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notSameOrderedMembers(set1, set2, [message])",
+		"body": [
+			"assert.notSameOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 don’t have the same members in the same order. Uses a strict equality check (===)."
+	},
+	"assert.sameDeepOrderedMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.sameDeepOrderedMembers(set1, set2, [message])",
+		"body": [
+			"assert.sameDeepOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 have the same members in the same order. Uses a deep equality check."
+	},
+	"assert.notSameDeepOrderedMembers(set1, set2, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notSameDeepOrderedMembers(set1, set2, [message])",
+		"body": [
+			"assert.notSameDeepOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that set1 and set2 don’t have the same members in the same order. Uses a deep equality check."
+	},
+	"assert.includeMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.includeMembers(superset, subset, [message])",
+		"body": [
+			"assert.includeMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset is included in superset in any order. Uses a strict equality check (===). Duplicates are ignored."
+	},
+	"assert.notIncludeMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notIncludeMembers(superset, subset, [message])",
+		"body": [
+			"assert.notIncludeMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset isn’t included in superset in any order. Uses a strict equality check (===). Duplicates are ignored."
+	},
+	"assert.includeDeepMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.includeDeepMembers(superset, subset, [message])",
+		"body": [
+			"assert.includeDeepMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset is included in superset in any order. Uses a deep equality check. Duplicates are ignored."
+	},
+	"assert.notIncludeDeepMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notIncludeDeepMembers(superset, subset, [message])",
+		"body": [
+			"assert.notIncludeDeepMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset isn’t included in superset in any order. Uses a deep equality check. Duplicates are ignored."
+	},
+	"assert.includeOrderedMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.includeOrderedMembers(superset, subset, [message])",
+		"body": [
+			"assert.includeOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset is included in superset in the same order beginning with the first element in superset. Uses a strict equality check (===)."
+	},
+	"assert.notIncludeOrderedMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notIncludeOrderedMembers(superset, subset, [message])",
+		"body": [
+			"assert.notIncludeOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset isn’t included in superset in the same order beginning with the first element in superset. Uses a strict equality check (===)."
+	},
+	"assert.includeDeepOrderedMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.includeDeepOrderedMembers(superset, subset, [message])",
+		"body": [
+			"assert.includeDeepOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset is included in superset in the same order beginning with the first element in superset. Uses a deep equality check."
+	},
+	"assert.notIncludeDeepOrderedMembers(superset, subset, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.notIncludeDeepOrderedMembers(superset, subset, [message])",
+		"body": [
+			"assert.notIncludeDeepOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that subset isn’t included in superset in the same order beginning with the first element in superset. Uses a deep equality check."
+	},
+	"assert.oneOf(inList, list, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.oneOf(inList, list, [message])",
+		"body": [
+			"assert.oneOf(${1:inList}, ${2:list}, ${3:[message]});",
+			"$0"
+		],
+		"description": "Asserts that non-object, non-array value inList appears in the flat array list."
+	},
+	"assert.changes(function, object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.changes(function, object, property, [message])",
+		"body": [
+			"assert.changes(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function changes the value of a property."
+	},
+	"assert.changesBy(function, object, property, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.changesBy(function, object, property, delta, [message])",
+		"body": [
+			"assert.changesBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function changes the value of a property by an amount (delta)."
+	},
+	"assert.doesNotChange(function, object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotChange(function, object, property, [message])",
+		"body": [
+			"assert.doesNotChange(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function does not change the value of a property."
+	},
+	"assert.changesButNotBy(function, object, property, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.changesButNotBy(function, object, property, delta, [message])",
+		"body": [
+			"assert.changesButNotBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function does not change the value of a property or of a function’s return value by an amount (delta)"
+	},
+	"assert.increases(function, object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.increases(function, object, property, [message])",
+		"body": [
+			"assert.increases(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function increases a numeric object property."
+	},
+	"assert.increasesBy(function, object, property, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.increasesBy(function, object, property, delta, [message])",
+		"body": [
+			"assert.increasesBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function increases a numeric object property or a function’s return value by an amount (delta)."
+	},
+	"assert.doesNotIncrease(function, object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotIncrease(function, object, property, [message])",
+		"body": [
+			"assert.doesNotIncrease(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function does not increase a numeric object property."
+	},
+	"assert.increasesButNotBy(function, object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.increasesButNotBy(function, object, property, [message])",
+		"body": [
+			"assert.increasesButNotBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function does not increase a numeric object property or function’s return value by an amount (delta)."
+	},
+	"assert.decreases(function, object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.decreases(function, object, property, [message])",
+		"body": [
+			"assert.decreases(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function decreases a numeric object property."
+	},
+	"assert.decreasesBy(function, object, property, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.decreasesBy(function, object, property, delta, [message])",
+		"body": [
+			"assert.decreasesBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function decreases a numeric object property or a function’s return value by an amount (delta)"
+	},
+	"assert.doesNotDecrease(function, object, property, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotDecrease(function, object, property, [message])",
+		"body": [
+			"assert.doesNotDecrease(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function does not decreases a numeric object property."
+	},
+	"assert.doesNotDecreaseBy(function, object, property, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.doesNotDecreaseBy(function, object, property, delta, [message])",
+		"body": [
+			"assert.doesNotDecreaseBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function does not decreases a numeric object property or a function’s return value by an amount (delta)"
+	},
+	"assert.decreasesButNotBy(function, object, property, delta, [message])": {
+		"scope": "javascript",
+		"prefix": "assert.decreasesButNotBy(function, object, property, delta, [message])",
+		"body": [
+			"assert.decreasesButNotBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]});",
+			"$0"
+		],
+		"description": "Asserts that a function does not decreases a numeric object property or a function’s return value by an amount (delta)"
+	},
+	"assert.ifError(object)": {
+		"scope": "javascript",
+		"prefix": "assert.ifError(object)",
+		"body": [
+			"assert.ifError(${1:object});",
+			"$0"
+		],
+		"description": "Asserts if value is not a false value, and throws if it is a true value. This is added to allow for chai to be a drop-in replacement for Node’s assert class."
+	},
+	"assert.isExtensible(object)": {
+		"scope": "javascript",
+		"prefix": "assert.isExtensible(object)",
+		"body": [
+			"assert.isExtensible(${1:object});",
+			"$0"
+		],
+		"description": "Asserts that object is extensible (can have new properties added to it)."
+	},
+	"assert.isNotExtensible(object)": {
+		"scope": "javascript",
+		"prefix": "assert.isNotExtensible(object)",
+		"body": [
+			"assert.isNotExtensible(${1:object});",
+			"$0"
+		],
+		"description": "Asserts that object is not extensible."
+	},
+	"assert.isSealed(object)": {
+		"scope": "javascript",
+		"prefix": "assert.isSealed(object)",
+		"body": [
+			"assert.isSealed(${1:object});",
+			"$0"
+		],
+		"description": "Asserts that object is sealed (cannot have new properties added to it and its existing properties cannot be removed)."
+	},
+	"assert.isNotSealed(object)": {
+		"scope": "javascript",
+		"prefix": "assert.isNotSealed(object)",
+		"body": [
+			"assert.isNotSealed(${1:object});",
+			"$0"
+		],
+		"description": "Asserts that object is not sealed."
+	},
+	"assert.isFrozen(object)": {
+		"scope": "javascript",
+		"prefix": "assert.isFrozen(object)",
+		"body": [
+			"assert.isFrozen(${1:object});",
+			"$0"
+		],
+		"description": "Asserts that object is frozen (cannot have new properties added to it and its existing properties cannot be modified)."
+	},
+	"assert.isNotFrozen(object)": {
+		"scope": "javascript",
+		"prefix": "assert.isNotFrozen(object)",
+		"body": [
+			"assert.isNotFrozen(${1:object});",
+			"$0"
+		],
+		"description": "Asserts that object is not frozen."
+	},
+	"assert.isEmpty(target)": {
+		"scope": "javascript",
+		"prefix": "assert.isEmpty(target)",
+		"body": [
+			"assert.isEmpty(${1:target});",
+			"$0"
+		],
+		"description": "Asserts that the target does not contain any values. For arrays and strings, it checks the length property. For Map and Set instances, it checks the size property. For non-function objects, it gets the count of own enumerable string keys."
+	},
+	"assert.isNotEmpty(target)": {
+		"scope": "javascript",
+		"prefix": "assert.isNotEmpty(target)",
+		"body": [
+			"assert.isNotEmpty(${1:target});",
+			"$0"
+		],
+		"description": "Asserts that the target contains values. For arrays and strings, it checks the length property. For Map and Set instances, it checks the size property. For non-function objects, it gets the count of own enumerable string keys."
+	}
+}

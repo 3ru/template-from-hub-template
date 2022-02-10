@@ -1,0 +1,22 @@
+[
+  {
+    "metadata": {
+      "id": "e337c67b-55c2-4fef-8949-eb260e7fb7fd",
+      "publisherId": "Shan.code-settings-sync",
+      "publisherDisplayName": "Shan"
+    },
+    "name": "code-settings-sync",
+    "publisher": "Shan",
+    "version": "3.4.3"
+  },
+  {
+    "metadata": {
+      "id": "4b6540da-bfa3-4b88-b9e3-df8f2d161124",
+      "publisherId": "mongodb.mongodb-vscode",
+      "publisherDisplayName": "mongodb"
+    },
+    "name": "mongodb-vscode",
+    "publisher": "mongodb",
+    "version": "0.6.10"
+  }
+]
